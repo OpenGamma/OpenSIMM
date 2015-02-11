@@ -1,0 +1,6 @@
+RiskFactorName, Amount,   Currency
+EUR-OIS-5Y,     -20000,   EUR
+USD-IRSL3M-2Y,  20000,    EUR
+USD-IRSL3M-2Y,  10000,    USD
+USD-IRSL3M-2Y,  13000,    EUR
+USD-IRSL3M-2Y,  -4000,    EUR

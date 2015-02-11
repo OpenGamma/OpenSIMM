@@ -1,0 +1,8 @@
+RiskFactorName, AssetClass, RiskType,    ShockType, Shift
+EUR-OIS-2Y,     IR,         SENSITIVITY, AB
+EUR-OIS-5Y,     IR,         SENSITIVITY, AB
+USD-IRSL3M-2Y,  IR,         SENSITIVITY, RE,        0.04
+IBM,            CR,         SENSITIVITY, AB
+SP500,          EQ,         EXPOSURE,    RE
+XAU,            CO,         EXPOSURE,    RE
+EUR,            XX,         EXPOSURE,    AB
