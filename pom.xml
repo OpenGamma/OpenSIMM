@@ -8,6 +8,31 @@
   <packaging>jar</packaging>
 
   <name>og-simm</name>
+  <description>
+      Initial implementation of the Standard Initial Margin Model (SIMM) approach described by ISDA
+  </description>
+  <organization>
+    <name>OpenGamma</name>
+    <url>http://www.opengamma.com</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:https://github.com/OpenGamma/OG-SIMM</connection>
+    <developerConnection>scm:git:https://github.com/OpenGamma/OG-SIMM</developerConnection>
+    <url>https://github.com/OpenGamma/OG-SIMM</url>
+  </scm>
+
+  <prerequisites>
+    <maven>3.0.4</maven>
+  </prerequisites>
 
   <build>
     <resources>
@@ -25,6 +50,15 @@
       </resource>
     </resources>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.2</version>
+        <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+        </configuration>
+      </plugin>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
         <version>2.5.3</version>
@@ -58,4 +92,5 @@
       <version>6.8.8</version>
     </dependency>
   </dependencies>
+
 </project>

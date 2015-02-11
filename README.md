@@ -1,6 +1,6 @@
-# Opengamma SIMM
+# OpenGamma SIMM
 
-This repository contains a prototype implementation of the
+This repository contains an initial implementation of the
 Standard Initial Margin Model (SIMM) approach described by ISDA.
 
 The OpenGamma SIMM library is released as Open Source Software using the
@@ -155,7 +155,7 @@ To execute the calculation (for instance in a test):
         RawDelta.of(FxRiskFactor.of(GBP), 125_000, GBP));
 
     // It is also possible to provide current initial and variation
-    // marging positions in the same format - see version of
+    // margining positions in the same format - see version of
     // calculator.varByAssetClass taking three arguments
 
     // Calculate the values for the portfolio
