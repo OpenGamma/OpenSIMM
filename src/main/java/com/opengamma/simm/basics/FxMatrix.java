@@ -103,8 +103,12 @@ public class FxMatrix {
    * should have at least one currency in common with this one.
    * The additional currencies from the other matrix are added one by one
    * and the exchange rate data created is coherent with some data in this
-   * matrix. If the data in the two matrices are not coherent then there is
-   * no guarantee which data will be used and the final result may be incoherent.
+   * matrix.
+   * <p>
+   * Note that if the other matrix has more than one currency in common with
+   * this one, and the rates for pairs of those currencies are different to
+   * the equivalents in this matrix, then the rates between the additional
+   * currencies is this matrix will differ from those in the original.
    *
    * @param other  the matrix to be merged into this one
    * @return a new matrix containing the rates from this matrix
