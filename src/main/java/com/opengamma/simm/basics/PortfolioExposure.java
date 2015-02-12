@@ -7,7 +7,7 @@ package com.opengamma.simm.basics;
 
 import java.util.Currency;
 
-import com.opengamma.simm.utils.ArgChecker;
+import com.opengamma.simm.util.ArgChecker;
 
 /**
  * Represents the exposure within a portfolio to

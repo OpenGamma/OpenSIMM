@@ -5,7 +5,7 @@
  */
 package com.opengamma.simm.basics;
 
-import com.opengamma.simm.utils.ArgChecker;
+import com.opengamma.simm.util.ArgChecker;
 
 /**
  * A standard risk factor. A risk factor wraps a user
@@ -20,6 +20,7 @@ public class StandardRiskFactor implements RiskFactor {
    * Create a risk factor with the specified name.
    *
    * @param name  the name for the risk factor
+   * @return a new {@code RiskFactor} instance
    */
   public static StandardRiskFactor of(String name) {
     return new StandardRiskFactor(name);

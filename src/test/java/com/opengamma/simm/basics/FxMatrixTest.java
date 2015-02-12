@@ -13,7 +13,7 @@ import java.util.LinkedHashMap;
 
 import org.testng.annotations.Test;
 
-import com.opengamma.simm.utils.Pair;
+import com.opengamma.simm.util.Pair;
 
 @Test
 public class FxMatrixTest {

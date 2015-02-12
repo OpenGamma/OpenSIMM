@@ -6,9 +6,9 @@
 package com.opengamma.simm.loading;
 
 
-import static com.opengamma.simm.utils.CollectionUtils.createMap;
-import static com.opengamma.simm.utils.CollectionUtils.entriesToMap;
-import static com.opengamma.simm.utils.CollectionUtils.pairsToMap;
+import static com.opengamma.simm.util.CollectionUtils.createMap;
+import static com.opengamma.simm.util.CollectionUtils.entriesToMap;
+import static com.opengamma.simm.util.CollectionUtils.pairsToMap;
 import static java.util.stream.Collectors.toList;
 import static org.testng.Assert.assertEquals;
 
@@ -28,14 +28,14 @@ import com.opengamma.simm.basics.PortfolioExposure;
 import com.opengamma.simm.basics.RiskFactor;
 import com.opengamma.simm.basics.RiskFactorProperties;
 import com.opengamma.simm.basics.AssetClass;
-import com.opengamma.simm.computing.SimmCalculator;
-import com.opengamma.simm.dataload.FxRateLoader;
-import com.opengamma.simm.dataload.FxShocksLoader;
-import com.opengamma.simm.dataload.PortfolioLoader;
-import com.opengamma.simm.dataload.RiskFactorBaseLevelsLoader;
-import com.opengamma.simm.dataload.RiskFactorDefinitionsLoader;
-import com.opengamma.simm.dataload.RiskFactorShocksLoader;
-import com.opengamma.simm.utils.Pair;
+import com.opengamma.simm.SimmCalculator;
+import com.opengamma.simm.load.FxRateLoader;
+import com.opengamma.simm.load.FxShocksLoader;
+import com.opengamma.simm.load.PortfolioLoader;
+import com.opengamma.simm.load.RiskFactorBaseLevelsLoader;
+import com.opengamma.simm.load.RiskFactorDefinitionsLoader;
+import com.opengamma.simm.load.RiskFactorShocksLoader;
+import com.opengamma.simm.util.Pair;
 
 @Test
 public class SimmFileLoadingTest {
@@ -69,10 +69,10 @@ public class SimmFileLoadingTest {
     assertEquals(var.size(), 4);
 
     Map<AssetClass, Double> expected = createMap(
-        AssetClass.IR, 447.5351,
-        AssetClass.CR, 33.3300,
-        AssetClass.EQ, 740.7143,
-        AssetClass.CO, 564.3703);
+        AssetClass.INTEREST_RATE, 447.5351,
+        AssetClass.CREDIT, 33.3300,
+        AssetClass.EQUITY, 740.7143,
+        AssetClass.COMMODITY, 564.3703);
 
     expected.entrySet()
         .stream()

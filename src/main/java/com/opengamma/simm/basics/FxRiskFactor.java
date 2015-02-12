@@ -7,7 +7,7 @@ package com.opengamma.simm.basics;
 
 import java.util.Currency;
 
-import com.opengamma.simm.utils.ArgChecker;
+import com.opengamma.simm.util.ArgChecker;
 
 /**
  * An FX risk factor. Unlike a {@link StandardRiskFactor},
@@ -22,10 +22,10 @@ public class FxRiskFactor implements RiskFactor {
   private final Currency currency;
 
   /**
-   * Generate an {@code FxRiskFactorId} from the specified currency.
+   * Generate an {@code FxRiskFactor} from the specified currency.
    *
    * @param currency  the currency of the risk factor
-   * @return a new {@code FxRiskFactorId} for the currency
+   * @return a new {@code FxRiskFactor} for the currency
    * @throws IllegalArgumentException if currency is null
    */
   public static FxRiskFactor of(Currency currency) {
@@ -33,11 +33,11 @@ public class FxRiskFactor implements RiskFactor {
   }
 
   /**
-   * Generate an {@code FxRiskFactorId} from the specified
+   * Generate an {@code FxRiskFactor} from the specified
    * String representing a currency.
    *
    * @param currency  the currency of the risk factor as a string
-   * @return a new {@code FxRiskFactorId} for the currency
+   * @return a new {@code FxRiskFactor} for the currency
    * @throws IllegalArgumentException if currency is null or
    * is not a supported ISO 4217 code.
    */

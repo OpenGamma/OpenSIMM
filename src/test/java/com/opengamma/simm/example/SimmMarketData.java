@@ -1,13 +1,18 @@
+/**
+ * Copyright (C) 2015 - present by OpenGamma Inc. and the OpenGamma group of companies
+ *
+ * Please see distribution for license.
+ */
 package com.opengamma.simm.example;
 
-import static com.opengamma.simm.basics.AssetClass.CO;
-import static com.opengamma.simm.basics.AssetClass.CR;
-import static com.opengamma.simm.basics.AssetClass.EQ;
-import static com.opengamma.simm.basics.AssetClass.IR;
-import static com.opengamma.simm.basics.RiskFactorProperties.RiskType.EXPOSURE;
-import static com.opengamma.simm.basics.RiskFactorProperties.RiskType.SENSITIVITY;
-import static com.opengamma.simm.utils.CollectionUtils.createList;
-import static com.opengamma.simm.utils.CollectionUtils.createMap;
+import static com.opengamma.simm.basics.AssetClass.COMMODITY;
+import static com.opengamma.simm.basics.AssetClass.CREDIT;
+import static com.opengamma.simm.basics.AssetClass.EQUITY;
+import static com.opengamma.simm.basics.AssetClass.INTEREST_RATE;
+import static com.opengamma.simm.basics.RiskType.EXPOSURE;
+import static com.opengamma.simm.basics.RiskType.SENSITIVITY;
+import static com.opengamma.simm.util.CollectionUtils.createList;
+import static com.opengamma.simm.util.CollectionUtils.createMap;
 
 import java.util.Currency;
 import java.util.List;
@@ -17,7 +22,7 @@ import com.opengamma.simm.basics.FxRiskFactor;
 import com.opengamma.simm.basics.StandardRiskFactor;
 import com.opengamma.simm.basics.RiskFactor;
 import com.opengamma.simm.basics.RiskFactorProperties;
-import com.opengamma.simm.utils.Pair;
+import com.opengamma.simm.util.Pair;
 
 public class SimmMarketData {
 
@@ -37,12 +42,12 @@ public class SimmMarketData {
   public static final StandardRiskFactor XAU = StandardRiskFactor.of("XAU");
 
   public static final Map<RiskFactor, RiskFactorProperties> RISK_FACTOR_NON_FX = createMap(
-      EUR_OIS_2Y, RiskFactorProperties.absoluteShock(IR, SENSITIVITY),
-      EUR_OIS_5Y, RiskFactorProperties.absoluteShock(IR, SENSITIVITY),
-      USD_IRSL3M_2Y, RiskFactorProperties.relativeShock(IR, SENSITIVITY, 0.04),
-      IBM, RiskFactorProperties.absoluteShock(CR, SENSITIVITY),
-      SP500, RiskFactorProperties.relativeShock(EQ, EXPOSURE),
-      XAU, RiskFactorProperties.relativeShock(CO, EXPOSURE));
+      EUR_OIS_2Y, RiskFactorProperties.absoluteShock(INTEREST_RATE, SENSITIVITY),
+      EUR_OIS_5Y, RiskFactorProperties.absoluteShock(INTEREST_RATE, SENSITIVITY),
+      USD_IRSL3M_2Y, RiskFactorProperties.relativeShock(INTEREST_RATE, SENSITIVITY, 0.04),
+      IBM, RiskFactorProperties.absoluteShock(CREDIT, SENSITIVITY),
+      SP500, RiskFactorProperties.relativeShock(EQUITY, EXPOSURE),
+      XAU, RiskFactorProperties.relativeShock(COMMODITY, EXPOSURE));
 
   public static final  Map<Pair<Currency, Currency>, Double> FX_RATES = createMap(
       Pair.of(EUR, USD), 1.40,

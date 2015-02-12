@@ -1,3 +1,8 @@
+/**
+ * Copyright (C) 2015 - present by OpenGamma Inc. and the OpenGamma group of companies
+ *
+ * Please see distribution for license.
+ */
 package com.opengamma.simm.example;
 
 import static com.opengamma.simm.example.SimmMarketData.*;
@@ -5,7 +10,7 @@ import static com.opengamma.simm.example.SimmMarketData.EUR_OIS_2Y;
 import static com.opengamma.simm.example.SimmMarketData.EUR_OIS_5Y;
 import static com.opengamma.simm.example.SimmMarketData.GBP_RF;
 import static com.opengamma.simm.example.SimmMarketData.USD_IRSL3M_2Y;
-import static com.opengamma.simm.utils.CollectionUtils.createList;
+import static com.opengamma.simm.util.CollectionUtils.createList;
 
 import java.util.Currency;
 import java.util.List;
@@ -18,7 +23,6 @@ public class SimmPortfolios {
   private static final Currency GBP = Currency.getInstance("GBP");
   private static final Currency USD = Currency.getInstance("USD");
 
-  // TODO there seems to be an implicit assumption that we only have one entry per name - would a set be better?
   public static final List<PortfolioExposure> DERIVATIVES = createList(
       PortfolioExposure.of(EUR_RF, 1000000, EUR),
       PortfolioExposure.of(USD_RF, -1400000, GBP),

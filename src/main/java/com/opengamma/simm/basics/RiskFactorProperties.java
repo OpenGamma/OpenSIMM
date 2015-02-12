@@ -11,13 +11,6 @@ package com.opengamma.simm.basics;
 public class RiskFactorProperties {
 
   /**
-   * The risk type for a risk factor.
-   */
-  public enum RiskType {
-    SENSITIVITY, EXPOSURE
-  }
-
-  /**
    * The asset class.
    */
   private final AssetClass assetClass;

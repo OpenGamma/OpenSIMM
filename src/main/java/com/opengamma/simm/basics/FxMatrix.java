@@ -5,7 +5,7 @@
  */
 package com.opengamma.simm.basics;
 
-import static com.opengamma.simm.utils.CollectionUtils.entriesToMap;
+import static com.opengamma.simm.util.CollectionUtils.entriesToMap;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -21,8 +21,8 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import com.opengamma.simm.utils.ArgChecker;
-import com.opengamma.simm.utils.Pair;
+import com.opengamma.simm.util.ArgChecker;
+import com.opengamma.simm.util.Pair;
 
 /**
  * Immutable class describing a set of currencies and all the cross rates between them.
@@ -44,7 +44,7 @@ public class FxMatrix {
    * 1.0 * Currency[i] = _fxrate * Currency[j]. If _currencies.get(EUR) = 0 and
    * _currencies.get(USD) = 1, the element _fxRate[0][1] is likely to be something
    * like 1.40 and _fxRate[1][0] like 0.7142... The rate _fxRate[1][0] will be
-   * computed from _fxRate[0][1] when the object is constructed. All the element
+   * computed from _fxRate[0][1] when the object is constructed. All the elements
    * of the matrix are meaningful and coherent.
    */
   private final double[][] rates;

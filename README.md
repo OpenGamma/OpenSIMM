@@ -7,6 +7,8 @@ The OpenGamma SIMM library is released as Open Source Software using the
 [Apache v2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
 Commercial support is [available](http://www.opengamma.com/) from the authors.
 
+[![OpenGamma](http://developers.opengamma.com/res/display/default/chrome/masthead_logo.png "OpenGamma")](http://developers.opengamma.com)
+
 ## Building OpenGamma SIMM
 
 Prerequisites:
@@ -72,8 +74,7 @@ different types of data need to be supplied:
     - a unique name,
     - an asset class - one of IR (Interest Rate), CR (Credit), EQ (Equity) or CO (Commodity)
     - the risk type - one of SENSITIVITY or EXPOSURE
-    - the shock type - one of AB (Absolute) or RE (Relative).
-    If relative then a shift can also be supplied.
+    - the shock type - either AB (Absolute) or RE (Relative). If relative then a shift can also be supplied.
 
 - Risk Factor Base Levels - the base levels describe the
   starting value for each risk factor
