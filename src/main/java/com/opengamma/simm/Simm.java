@@ -69,8 +69,7 @@ public class Simm {
     boolean detail = Stream.of(args).filter(s -> s.equals("-pl")).findFirst().isPresent();
     if (detail) {
       populateFormatterWithPnlOutput(formatter, propertyFileLoader);
-    }
-    else {
+    } else {
       populateFormmatterWithStandardOutput(formatter, propertyFileLoader);
     }
 

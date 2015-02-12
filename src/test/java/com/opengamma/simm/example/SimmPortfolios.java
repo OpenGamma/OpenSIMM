@@ -34,7 +34,8 @@ public class SimmPortfolios {
       PortfolioExposure.of(SP500, 100000, USD),
       PortfolioExposure.of(XAU, -123456, USD));
 
-  public static final List<PortfolioExposure> VARIATION_MARGIN = createList(PortfolioExposure.of(GBP_RF, 150000, USD));
+  public static final List<PortfolioExposure> VARIATION_MARGIN =
+      createList(PortfolioExposure.of(GBP_RF, 150000, USD));
 
   public static final List<PortfolioExposure> INITIAL_MARGIN = createList(
       PortfolioExposure.of(USD_RF, -1300000, GBP),
