@@ -1,0 +1,10 @@
+RiskFactorName, Amount,   Currency
+EUR-OIS-2Y,     100000,   EUR
+EUR-OIS-5Y,     -20000,   EUR
+USD-IRSL3M-2Y,  20000,    EUR
+IBM,            30300,    EUR
+SP500,          100000,   USD
+XAU,            -123456,  USD
+EUR,            1000000,  EUR
+USD,            -1400000, GBP
+GBP,            200000,   USD
