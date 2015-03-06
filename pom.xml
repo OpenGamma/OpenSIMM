@@ -21,6 +21,18 @@
     <url>https://github.com/OpenGamma/OpenSIMM/issues</url>
   </issueManagement>
   <inceptionYear>2015</inceptionYear>
+
+  <!-- ==================================================================== -->
+  <developers>
+    <developer>
+      <name>OpenGamma</name>
+      <organization>OpenGamma</organization>
+      <organizationUrl>http://developers.opengamma.com</organizationUrl>
+      <url>https://github.com/jodastephen</url>
+    </developer>
+  </developers>
+
+  <!-- ==================================================================== -->
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
