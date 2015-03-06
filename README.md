@@ -2,12 +2,24 @@
 
 # OpenSIMM by OpenGamma
 
-This repository contains a standalone reference implementation of the ISDA-proposed Standard Initial Margin Model (SIMM) for non-cleared derivatives. The aim of OpenSIMM is to support standardization and adoption of the methodology which will be used industry-wide as the basis for the exchange of bilateral initial margin. 
+This repository contains a standalone reference implementation of the ISDA-proposed Standard Initial Margin Model (SIMM) for non-cleared derivatives. The aim of OpenSIMM is to support standardization and adoption of the methodology which will be used industry-wide as the basis for the exchange of bilateral initial margin.
+
+As the SIMM model has yet to be finalized, OpenSIMM will continue to follow the progress of the standard as it evolves. We have implemented the current Historical VaR-based approach, but as the industry agrees on changes to the methodology, we will release further updates to this library to reflect those changes.
 
 OpenSIMM is released as open source software under the 
 [Apache v2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
 
 For more information please refer to our website, or contact us at simm@opengamma.com
+
+## Releases
+
+This repository contains version 1.0 as available in [Maven Central](http://search.maven.org/#artifactdetails%7Ccom.opengamma%7Copensimm%7C1.0%7Cjar). OpenSIMM requires Java SE 8 or later.
+
+    <dependency>
+        <groupId>com.opengamma</groupId>
+        <artifactId>opensimm</artifactId>
+        <version>1.0</version>
+    </dependency>
 
 ## Building OpenSIMM
 
@@ -35,11 +47,11 @@ First run:
 
     mvn package
 
-This will build a jar file: simm-0.1-SNAPSHOT-jar-with-dependencies.jar
+This will build a jar file: simm-1.0-jar-with-dependencies.jar
 
 The jar file can then be executed:
 
-    java -jar target/simm-0.1-SNAPSHOT-jar-with-dependencies.jar src/test/resources/simm-sample/simm.properties
+    java -jar target/simm-1.0-jar-with-dependencies.jar src/test/resources/simm-sample/simm.properties
 
 which should give the output similar to the following:
 
