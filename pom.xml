@@ -73,7 +73,7 @@
             <manifest>
               <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-              <mainClass>com.opengamma.simm.Simm</mainClass>
+              <mainClass>com.opengamma.opensimm.Simm</mainClass>
             </manifest>
           </archive>
         </configuration>
