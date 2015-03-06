@@ -149,7 +149,7 @@ public class FxMatrix {
   }
 
   /**
-   * Creates a {@link Collector} that allows a Map of currency pair -> rates
+   * Creates a {@link Collector} that allows a Map of currency pair to rates
    * to be streamed and collected into a new {@code FxMatrix}.
    *
    * @return a collector for creating an {@code FxMatrix} from a stream

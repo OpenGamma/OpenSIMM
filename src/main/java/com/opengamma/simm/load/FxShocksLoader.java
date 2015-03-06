@@ -44,7 +44,7 @@ public class FxShocksLoader {
   /**
    * Load the FX shocks into a Map.
    *
-   * @return a Map from currency pair -> shocks
+   * @return a Map from currency pair to shocks
    */
   public Map<Pair<Currency, Currency>, List<Double>> load() {
     return BasicCsvParser.parseFile(file, EXPECTED_HEADER, data ->

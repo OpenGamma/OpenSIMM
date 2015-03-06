@@ -39,7 +39,7 @@ public class RiskFactorBaseLevelsLoader {
   /**
    * Load the base levels into a Map.
    *
-   * @return a map containing RiskFactor -> Double
+   * @return a map containing RiskFactor to Double
    */
   public Map<RiskFactor, Double> load() {
     return BasicCsvParser.parseFile(file, EXPECTED_HEADER, data ->
