@@ -1,15 +1,15 @@
-# OpenGamma SIMM
+[![OpenGamma](http://developers.opengamma.com/res/display/default/chrome/masthead_logo.png "OpenGamma")](http://www.opengamma.com)
 
-This repository contains an initial implementation of the
-Standard Initial Margin Model (SIMM) approach described by ISDA.
+# OpenSIMM by OpenGamma
 
-The OpenGamma SIMM library is released as Open Source Software using the
+This repository contains a standalone reference implementation of the ISDA-proposed Standard Initial Margin Model (SIMM) for non-cleared derivatives. The aim of OpenSIMM is to support standardization and adoption of the methodology which will be used industry-wide as the basis for the exchange of bilateral initial margin. 
+
+OpenSIMM is released as open source software under the 
 [Apache v2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
-Commercial support is [available](http://www.opengamma.com/) from the authors.
 
-[![OpenGamma](http://developers.opengamma.com/res/display/default/chrome/masthead_logo.png "OpenGamma")](http://developers.opengamma.com)
+For more information please refer to our website, or contact us at simm@opengamma.com
 
-## Building OpenGamma SIMM
+## Building OpenSIMM
 
 Prerequisites:
 
@@ -18,7 +18,7 @@ Prerequisites:
 
 The source code can be cloned using [git](http://git-scm.com/) from GitHub:
 
-    git clone https://github.com/OpenGamma/OG-SIMM.git
+    git clone https://github.com/OpenGamma/OpenSIMM.git
 
 Simply run this command to compile and install the source code locally:
 
@@ -27,7 +27,7 @@ Simply run this command to compile and install the source code locally:
 The project contains only one external dependency - TestNG which is required
 for running the unit tests. Apart from this, the project is entirely stand-alone.
 
-## Running OpenGamma SIMM
+## Running OpenSIMM
 
 The calculation can be run from the command line.
 

@@ -2,14 +2,14 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.opengamma.simm</groupId>
-  <artifactId>og-simm</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <groupId>com.opengamma</groupId>
+  <artifactId>opensimm</artifactId>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
-  <name>og-simm</name>
+  <name>OpenSIMM</name>
   <description>
-      Initial implementation of the Standard Initial Margin Model (SIMM) approach described by ISDA
+      Reference implementation of the ISDA-proposed Standard Initial Margin Model (SIMM) for non-cleared derivatives.
   </description>
   <organization>
     <name>OpenGamma</name>
