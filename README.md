@@ -11,9 +11,11 @@ OpenSIMM is released as open source software under the
 
 For more information please refer to our website, or contact us at simm@opengamma.com
 
+
 ## Releases
 
-This repository contains version 1.0 as available in [Maven Central](http://search.maven.org/#artifactdetails%7Ccom.opengamma%7Copensimm%7C1.0%7Cjar). OpenSIMM requires Java SE 8 or later.
+This repository contains version 1.0 as available in [Maven Central](http://search.maven.org/#artifactdetails%7Ccom.opengamma%7Copensimm%7C1.0%7Cjar).
+OpenSIMM requires Java SE 8 or later.
 
     <dependency>
         <groupId>com.opengamma</groupId>
@@ -21,6 +23,7 @@ This repository contains version 1.0 as available in [Maven Central](http://sear
         <version>1.0</version>
     </dependency>
 
+    
 ## Building OpenSIMM
 
 Prerequisites:
@@ -39,6 +42,7 @@ Simply run this command to compile and install the source code locally:
 The project contains only one external dependency - TestNG which is required
 for running the unit tests. Apart from this, the project is entirely stand-alone.
 
+
 ## Running OpenSIMM
 
 The calculation can be run from the command line.
@@ -47,11 +51,11 @@ First run:
 
     mvn package
 
-This will build a jar file: simm-1.0-jar-with-dependencies.jar
+This will build a jar file: opensimm-1.0.jar
 
 The jar file can then be executed:
 
-    java -jar target/simm-1.0-jar-with-dependencies.jar src/test/resources/simm-sample/simm.properties
+    java -jar target/opensimm-1.0.jar src/test/resources/simm-sample/simm.properties
 
 which should give the output similar to the following:
 
@@ -66,6 +70,7 @@ which should give the output similar to the following:
     Total       1,785.9496
     ----------- ----------
 
+
 # SIMM Calculator
 
 The primary class in the system is the SimmCalculator
@@ -74,6 +79,7 @@ a VaR measure for asset classes using SIMM.
 
 The calculator can either be used with raw data
 provided programatically, or by loading csv files.
+
 
 ## Data Types
 
@@ -109,6 +115,7 @@ different types of data need to be supplied:
 
 - Variation Margin Portfolio - any variation margin broken down
   into exposures against each Risk Factor.
+
 
 ## Executing Programmatically
 
@@ -174,6 +181,7 @@ To execute the calculation (for instance in a test):
     // Calculate the values for the portfolio
     Map<AssetClass, Double> result = calculator.varByAssetClass(portfolio);
 
+
 ## Executing from data files
 
 It is possible to load the required data from csv files rather
@@ -217,10 +225,12 @@ are provided to facilitate this.
     Map<AssetClass, Double> var =
         calculator.varByAssetClass(derivativesPortfolio, initialMargin, variationMargin);
 
+
 ## File Formats
 
 The file formats are straightforward - just simple CSV files. There are examples
 in test/resources/simm-sample.
+
 
 ### Risk Factor Definitions
 
