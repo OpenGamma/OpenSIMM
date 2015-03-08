@@ -13,6 +13,7 @@ OpenSIMM is released as open source software under the
 
 For more information please refer to our website, or contact us at simm@opengamma.com
 
+If you would like the full implementation whitepaper, please contact us at simm@opengamma.com
 
 ## Releases
 
