@@ -6,8 +6,6 @@ This repository contains a standalone reference implementation of the ISDA-propo
 
 As the SIMM model has yet to be finalized, OpenGamma will continue to work with the industry on the standard as it evolves. We have implemented the initial HVaR-based approach in this release, but we are working with dealers on implementing the current version of the model, which uses a different methodology.
 
-This new model will be available to those on the ISDA SIMM committee via a private GitHub repository in the next week. If you are interested in accessing this model when it becomes available, please contact us at simm@opengamma.com.
-
 OpenSIMM is released as open source software under the 
 [Apache v2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
 
