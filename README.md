@@ -5,9 +5,9 @@
 [![Build Status](https://travis-ci.org/OpenGamma/OpenSIMM.svg?branch=master)](https://travis-ci.org/OpenGamma/OpenSIMM)
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-This repository contains a standalone reference implementation of the ISDA-proposed Standard Initial Margin Model (SIMM) for non-cleared derivatives. The aim of OpenSIMM is to support standardization and adoption of the methodology which will be used industry-wide as the basis for the exchange of bilateral initial margin.
+This repository contains a standalone reference implementation of the original ISDA-proposed Standard Initial Margin Model (SIMM) for non-cleared derivatives. This implements the initial HVaR-based approach.
 
-As the SIMM model has yet to be finalized, OpenGamma will continue to work with the industry on the standard as it evolves. We have implemented the initial HVaR-based approach in this release, but we are working with dealers on implementing the current version of the model, which uses a different methodology.
+**Since OpenSIMM was released, OpenGamma has continued to work with the industry to implement the latest versions of the SIMM standard. Due to ISDA licensing restrictions we are unable to release these later versions as open source software, but they are available commercially from OpenGamma. Please contact us for further information at simm@opengamma.com.**
 
 OpenSIMM is released as open source software under the 
 [Apache v2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
